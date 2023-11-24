@@ -12,8 +12,15 @@ class Porjotok extends Component{
 		}
 	}
 clickHandler = () => {
-	console.log('Hello ARAF');
-	alert('Welcome PORJOTOK')
+	// console.log('Hello ARAF');
+	// alert('Welcome PORJOTOK')
+	this.setState({
+		website:[
+
+			{name:'PORJOTOK.shop',founder:'Araf'},
+			{name:'A ecommencers platform',founder:'Ahmed'},
+			]
+	})
 }
 
 	render(){
@@ -21,6 +28,8 @@ clickHandler = () => {
 		return ( 
 			<div>
 				<button onClick={this.clickHandler}>Click Here</button>
+			<h2> Please Visit {this.state.website[0].name} Founder {this.state.website[1].founder}</h2>
+			<h2> Please Visit {this.state.website[1].name} Founder {this.state.website[0].founder}</h2>
 			<h2> Please Visit {this.state.website[0].name} Founder {this.state.website[1].founder}</h2>
 				</div>
 			)
