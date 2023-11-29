@@ -2,14 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/Hello'
 import Porjotok from './components/porjotok'
-import Hook from './components/Hook'
+import Check from './components/Check'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         
-        <Hook/>
+        <Check/>
 
       </header>
     </div>
